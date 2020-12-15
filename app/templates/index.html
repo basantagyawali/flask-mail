@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Flask Mail{% endblock %}
+
+{% block body %}
+
+<h1>Welcome to the Flask Mail </h1>
+{{ wtf.quick_form(form) }}
+
+{% endblock %}
