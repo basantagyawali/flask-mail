@@ -9,5 +9,5 @@ def index():
 	if form.validate_on_submit():
 		to = form.email.data
 		send_email(to, 'Flask Mail', template='check')
-		return "The mail is sent to your gmail"
+		return "The mail has been  sent to this account {} ".format(to)
 	return render_template('index.html', form=form)
